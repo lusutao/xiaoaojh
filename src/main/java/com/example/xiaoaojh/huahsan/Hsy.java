@@ -14,7 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class Hsy {
 
     @GetMapping("/hello")
-    public String tohello(String name){
-        return "hello!"+name;
+    public String huashanzm(String name){
+	system.out.println("我会华山剑法");
+        return "华山派掌门："+name;
+	
+    }
+
+    @GetMapping("/world")
+    public void linghuchong(String name){
+        tohello(name);
+	system.out.println("我会华山剑法,还会独孤九剑！！！");
     }
 }
