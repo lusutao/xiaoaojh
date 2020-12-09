@@ -17,4 +17,9 @@ public class Hsy {
     public String tohello(String name){
         return "hello!"+name;
     }
+
+    @GetMapping("/world")
+    public void world(String name){
+        tohello(name);
+    }
 }
