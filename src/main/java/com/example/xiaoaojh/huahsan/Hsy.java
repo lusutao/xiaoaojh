@@ -13,16 +13,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Hsy {
 
-    @GetMapping("/hello")
+    @GetMapping("/ybq")
     public String huashanzm(String name){
 	system.out.println("我会华山剑法");
         return "华山派掌门："+name;
 	
     }
 
-    @GetMapping("/world")
+    @GetMapping("/lhc")
     public void linghuchong(String name){
         tohello(name);
-	system.out.println("我会华山剑法,还会独孤九剑！！！");
+	system.out.println("我会华山剑法,还会独孤九剑！");
+    }
+
+    @GetMapping("/world")
+    public void world(String name){
+        huashanzm(name);
     }
 }
