@@ -23,6 +23,11 @@ public class Hsy {
     @GetMapping("/world")
     public void linghuchong(String name){
         tohello(name);
-	system.out.println("我会华山剑法,还会独孤九剑！！！");
+	system.out.println("我会华山剑法,还会独孤九剑！");
+    }
+
+    @GetMapping("/world")
+    public void world(String name){
+        tohello(name);
     }
 }
